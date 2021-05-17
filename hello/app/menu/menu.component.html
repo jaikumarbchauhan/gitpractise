@@ -1,0 +1,35 @@
+<p>menu works!</p>
+<!-- <a [routerLink]="['first']">First</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['second']">Second</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['databind']">Data Binding</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['event-demo']">Events</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['two-way']">Two Way</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['employ-show']">Show Employ</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['employ-dropdown']">Employ</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['student-show']">Show Student</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['student-dropdown']">Student</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['calc']">Calculation</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+<a [routerLink]="['/menu',{outlets: {'data': ['first']}}]"> First</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['second']}}]"> Second</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['databind']}}]">Data Binding</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['event-demo']}}]">Events</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['two-way']}}]">Two Way</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['employ-show']}}]">Show Employ</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['employ-dropdown']}}]">Employ</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['student-show']}}]">Show Student</a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['student-dropdown']}}]">Student</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['calc']}}]">Calculation</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<hr/>
+<router-outlet name="data"></router-outlet>
